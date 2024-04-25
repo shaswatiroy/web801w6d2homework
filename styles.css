@@ -19,12 +19,12 @@ header {
     background-size: 100%;
 }
 
-.main-header {
+#home header .row {
     background-color: rgb(255, 255, 255, 0.8);
-    width: 700px;
+    width: 760px;
     margin: 2em auto 0 auto;
     min-height: 100px;
-    height: 100px;
+    height: 130px;
 }
 
 .main-header .logo img {
@@ -35,10 +35,10 @@ header {
 }
 
 /* Navigation */
-.main-menu {
+/* .main-menu {
     margin-left: 227px;
     font-weight: 400;
-}
+} */
 
 .main-menu ul li {
     list-style-type: none;
@@ -60,12 +60,12 @@ header {
     color: #9ed034;
 }
 
-.main-menu ul li.active {
+.main-menu div ul li.active {
     background: #9ed034;
     border: none;
 }
 
-.main-menu ul li.active a {
+.main-menu div ul li.active a {
     color: #fff;
 }
 
@@ -87,7 +87,7 @@ section {
 }
 
 section #partners {
-    width: 1200px;
+    width: 900px;
     padding: 2em 0 2em 0;
     margin: 0 auto;
     text-align: center;
@@ -96,14 +96,14 @@ section #partners {
 section #partners .partner{
     display: inline-block;
     margin: 0 0.75em;
-    padding: 1.3em 1.5 em;
     background-color: #fff;
     border-radius: 50%;
 }
 
 section #partners .partner img{
-    width: 90px;
-    height: 90px;
+    width: 70px;
+    height: 80px;
+    mix-blend-mode: multiply;
 }
 
 /* Footer */
@@ -114,53 +114,54 @@ footer {
     background-color: #ecfab8;
 }
 
-footer #nondisclaimer .copy{
+#nondisclaimer .copy{
     padding: 3.5em 3.5em 3.5em 13em;
     float: left;
     font-size: 0.9em;
 }
 
-footer #nondisclaimer .social {
+#nondisclaimer .social {
     padding: 2.5em;
     margin-right: 9.25em;
     float: right;
 }
 
-footer #disclaimer {
+#disclaimer {
     clear: both;
 }
 
-footer #disclaimer p {
+#disclaimer p {
     font-size: 0.85em;
     text-align: center;
 }
 
-footer #nondisclaimer .social .fa {
+#nondisclaimer .social .fa {
     padding: 15px;
-    font-size: 15px;
+    font-size: 25px;
     margin-right: 9.25em;
-    width: 15px;
+    width: 50px;
+    height: 50px;
     text-align: center;
     text-decoration: none;
     margin: 0.4px;
     border-radius: 50%;
 }
 
-footer #nondisclaimer .social .fa:hover{
+#nondisclaimer .social .fa:hover{
     opacity: 0.7;
 }
 
-footer #nondisclaimer .social .fa-facebook{
+#nondisclaimer .social .fa-facebook{
     background: #3B5998;
     color: white;
 }
 
-footer #nondisclaimer .social .fa-instagram{
+#nondisclaimer .social .fa-instagram{
     background: #55ACEE;
     color: white;
 }
 
-footer #nondisclaimer .social .fa-twitter{
+#nondisclaimer .social .fa-twitter{
     background: #125688;
     color: white;
 }
@@ -364,4 +365,56 @@ form .button input {
     color: #3a3a3a;
     background: linear-gradient(0deg, rgba(251,215,139,1) 0%, rgba(118,213,245,1) 100%);
     padding: 1.5em;
+}
+
+/* Media Queries */
+@media (max-width: 992px) {
+    .logo img {
+        position: relative;
+        bottom: 8px;
+    }
+    .main-menu {
+        width: 200px;
+        background-color:rgb(255, 255, 255);
+        position: absolute;
+        right: 1.7em;
+      }
+      .main-menu ul li {
+        border-bottom: 1px solid rgba(202, 204, 202, 0.6);
+        list-style-type: none;
+        float: left;
+        padding-left: 25px;
+        padding-right: 25px;
+        border-left: 1px solid rgba(202, 204, 202, 0.6);
+        line-height: 100px;
+        text-transform: uppercase;
+        font-size: 14px;
+      }
+      main {
+        padding: 3em 1em 3em 1em;
+        margin: 0;
+      }
+      #home .main-col-content {
+        padding: 25px;
+        min-height: 450px;
+        margin-top: 1em;
+      }
+    
+    .main-menu ul li a {
+        text-decoration: none;
+        color: #888;
+    }
+    
+    .main-menu ul li a:hover {
+        color: #9ed034;
+    }
+    
+    .main-menu div ul li.active {
+        background: #9ed034;
+        border: none;
+    }
+    
+    .main-menu div ul li.active a {
+        color: #fff;
+    }
 }

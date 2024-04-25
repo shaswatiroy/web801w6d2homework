@@ -6,7 +6,7 @@ var imageList = [];
 var imageAltList = [];
 var image;
 var closeTag = ">";
-var openList = "<li class='partner'>";
+var openList = "<li class='partner col-6 col-md-4 col-lg-2'>";
 var closeList = "</li>";
 
 for (var i = 0; i < 6; i++) {
